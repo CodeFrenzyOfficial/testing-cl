@@ -2,9 +2,9 @@
 
 @plugin "tailwindcss-animate";
 
-:root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+/* :root {
+  --background: #131232;
+  --foreground: #131232;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -36,7 +36,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-}
+} */
 
 @font-face {
   font-family: 'Roboto';
@@ -129,7 +129,8 @@ body {
 }
 
 .custom-gradient {
-  background-image: url("../public/assets/icon-images/bg-pattern.png"), linear-gradient(to bottom, #131232b8, #131232b8, #131232, #131232);
+  background-image: url("../public/assets/icon-images/bg-pattern.png"), linear-gradient(to bottom, transparent, #131232,#131232,#131232,#131232,#131232,#131232);
   background-size: cover;
   background-position: bottom;
+  height: 100%;
 }

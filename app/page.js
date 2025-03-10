@@ -14,7 +14,7 @@ export default function Home() {
         {/* background video */}
         <video
           src="/assets/icon-images/Neon Bg Video.mp4"
-          className="absolute top-0 left-0 w-full h-[45%] object-cover video-bg z-[-1]"
+          className="absolute top-0 left-0 w-full h-full object-cover video-bg z-[-1]"
           loop
           autoPlay
           muted
@@ -49,9 +49,11 @@ export default function Home() {
             <HomeInput />
 
             {/* Buy now button */}
-            <div className="grid place-items-center my-5">
-              <button className="w-fit bg-gray-900 text-white rounded-full px-10 py-5 font-normal text-xl cursor-pointer">
-                Buy Now
+            <div className="grid place-items-center my-4">
+              <button className="w-fit bg-gradient-to-r from-[#56D1F5] to-[#6E2972] text-white font-semibold rounded-full p-[3px] cursor-pointer">
+                <span className="flex w-full bg-gray-900 text-white rounded-full px-5 py-3 lg:px-14 lg:py-5 lg:text-[24px] font-normal">
+                  Buy Now
+                </span>
               </button>
             </div>
           </div>
@@ -70,11 +72,11 @@ export default function Home() {
 
             {/* social icons */}
             <div className="flex items-center gap-14 text-white my-10">
-              <FaXTwitter className="text-3xl lg:text-6xl" />
+              <FaXTwitter className="text-3xl lg:text-6xl transition-all duration-200 hover:scale-105 hover:text-white/50" />
               <div className="p-2 rounded-full bg-white text-black">
-                <RiSendPlaneFill className="text-2xl lg:text-5xl" />
+                <RiSendPlaneFill className="text-2xl lg:text-5xl transition-all duration-200 hover:scale-105 hover:text-blue-400" />
               </div>
-              <FaGithub className="text-3xl lg:text-6xl" />
+              <FaGithub className="text-3xl lg:text-6xl transition-all duration-200 hover:scale-105 hover:text-white/50" />
             </div>
 
             {/* text */}
@@ -102,13 +104,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* example Iframe */}
-            <CustomIframe />
-
             {/* video section */}
-            <div className="opacity-30 mt-5">
+            <div className="w-full relative mt-5 min-h-screen py-10">
+              {/* example Iframe */}
+              <CustomIframe />
+
               <video
                 src="/assets/icon-images/Cyber City Video.mp4"
+                className="absolute top-0 left-0 w-full h-full opacity-30 z-0 object-cover"
                 autoPlay
                 loop
                 muted
@@ -130,6 +133,7 @@ export default function Home() {
               />
             </div>
           </div>
+          
           <footer className="w-full bg-[#050440] grid place-items-center py-5 text-white  text-center">
             <div className="space-y-2">
               <img src="/assets/icon-images/footer-logo.png" alt="" />

@@ -53,11 +53,11 @@ export default function Nav() {
                 </button>
 
                 <div className="flex items-center gap-5 text-white">
-                    <FaXTwitter className="text-3xl" />
+                    <FaXTwitter className="text-3xl transition-all duration-200 hover:scale-105 hover:text-white/50" />
                     <div className="p-2 rounded-full bg-white text-black">
-                        <RiSendPlaneFill className="text-2xl" />
+                        <RiSendPlaneFill className="text-xl transition-all duration-200 hover:scale-105 hover:text-blue-400" />
                     </div>
-                    <FaGithub className="text-3xl" />
+                    <FaGithub className="text-3xl transition-all duration-200 hover:scale-105 hover:text-white/50" />
                 </div>
             </div>
         </nav>
