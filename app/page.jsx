@@ -58,9 +58,12 @@ export default function Home() {
 
           {/* cat video */}
           <div className="w-full h-full relative grid place-items-center custom-gradient z-[100]">
-            <div className="w-2/3 lg:w-full aspect-video rounded-full overflow-hidden">
-              <video autoPlay loop muted playsInline>
-                <source src={`/assets/animation/cat-animation.mp4?v=${Date.now()}`} type="video/mp4" />
+            <div className="w-2/3 lg:w-[40%] rounded-full overflow-hidden">
+              <video                
+              >
+                <source src="/assets/animation/cat-animation.mp4" autoPlay
+                  loop
+                  muted />
               </video>
             </div>
 
