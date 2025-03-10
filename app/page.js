@@ -14,7 +14,7 @@ export default function Home() {
         {/* background video */}
         <video
           src="/assets/icon-images/Neon Bg Video.mp4"
-          className="absolute top-0 left-0 w-full h-[35%] object-cover video-bg z-[-1]"
+          className="absolute top-0 left-0 w-full h-[45%] object-cover video-bg z-[-1]"
           loop
           autoPlay
           muted
