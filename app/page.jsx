@@ -5,6 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import CustomIframe from "@/components/iframe/CustomIframe";
 import Loader from "@/components/loader/Loader";
+
 export default function Home() {
   return (
     <div className="">
@@ -27,7 +28,7 @@ export default function Home() {
           <div className="w-[80%] lg:w-[60%] flex flex-col text-center gap-2">
             <div className="grid place-items-center">
               <img
-                src="/assets/icon-images/$CLAW-1.png"
+                src={'/assets/animation/cat-animation.mp4'}
                 className="lg:w-[35%] object-contain"
                 alt=""
               />
@@ -135,6 +136,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <video src="/assets/animation/cat-animation.mp4" className="w-96 h-96 aspect-video"></video>
 
           <footer className="w-full bg-[#050440] grid place-items-center py-5 text-white  text-center">
             <div className="space-y-2">
