@@ -4,15 +4,17 @@ import { RiSendPlaneFill } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import CustomIframe from "@/components/iframe/CustomIframe";
+import Loader from "@/components/loader/Loader";
 export default function Home() {
   return (
     <div className="">
+      <Loader />
       <Nav />
       <main className="relative min-h-screen">
         {/* background video */}
         <video
           src="/assets/icon-images/Neon Bg Video.mp4"
-          className="absolute top-0 left-0 w-full h-full object-cover video-bg z-[-1]"
+          className="absolute top-0 left-0 w-full h-[35%] object-cover video-bg z-[-1]"
           loop
           autoPlay
           muted
@@ -24,14 +26,16 @@ export default function Home() {
         <div className="min-h-screen flex flex-col justify-start items-center z-[10] relative">
           <div className="w-[80%] lg:w-[60%] flex flex-col text-center gap-2">
             <div className="grid place-items-center">
-              <img src="/assets/icon-images/$CLAW-1.png" className="lg:w-[35%] object-contain" alt="" />
+              <img
+                src="/assets/icon-images/$CLAW-1.png"
+                className="lg:w-[35%] object-contain"
+                alt=""
+              />
             </div>
 
             <h2 className="text-4xl xl:text-[64px] text-white -mt-5 lg:-mt-10 font-bold !leading-tight">
               The World’s first AI-powered <br />
-              <span className="text-[#BA8AB0]">
-                savage meme coin cat!
-              </span>
+              <span className="text-[#BA8AB0]">savage meme coin cat!</span>
             </h2>
 
             <div className="grid place-items-center mt-4">
@@ -45,7 +49,7 @@ export default function Home() {
             <HomeInput />
 
             {/* Buy now button */}
-            <div className="grid place-items-center mt-5">
+            <div className="grid place-items-center my-5">
               <button className="w-fit bg-gray-900 text-white rounded-full px-10 py-5 font-normal text-xl cursor-pointer">
                 Buy Now
               </button>
@@ -53,9 +57,15 @@ export default function Home() {
           </div>
 
           {/* cat video */}
-          <div className="w-full h-full relative grid place-items-center custom-gradient">
+          <div className="w-full h-full relative grid place-items-center custom-gradient z-[100]">
             <div className="w-2/3 lg:w-[40%]">
-              <video src="/assets/icon-images/claw-animation.webm" className="lighten-mode" autoPlay loop muted></video>
+              <video
+                src="/assets/icon-images/claw-animation.webm"
+                className="lighten-mode"
+                autoPlay
+                loop
+                muted
+              ></video>
             </div>
 
             {/* social icons */}
@@ -69,14 +79,25 @@ export default function Home() {
 
             {/* text */}
             <div className="grid place-items-center px-20 lg:px-24 my-10">
-
-              <div className="rounded-4xl bg-[#171D27] px-4 lg:px-14 py-4" data-aos="fade-up">
-                <img src="/assets/icon-images/first-qoute.png" className="w-3 lg:w-auto" alt="" />
+              <div
+                className="rounded-4xl bg-[#171D27] px-4 lg:px-14 py-4"
+                data-aos="fade-up"
+              >
+                <img
+                  src="/assets/icon-images/first-qoute.png"
+                  className="w-3 lg:w-auto"
+                  alt=""
+                />
                 <h2 className="text-center lg:text-[45px] leading-tight font-bold bg-gradient-to-b from-white to-white/30 bg-clip-text text-transparent lg:px-10">
-                  Claw brings the cyberpunk AI revolution. A fusion of AI intelligence and degen crypto spirit.
+                  Claw brings the cyberpunk AI revolution. A fusion of AI
+                  intelligence and degen crypto spirit.
                 </h2>
                 <div className="flex justify-end">
-                  <img src="/assets/icon-images/second-qoute.png" className="w-3 lg:w-auto mr-14" alt="" />
+                  <img
+                    src="/assets/icon-images/second-qoute.png"
+                    className="w-3 lg:w-auto mr-14"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -86,27 +107,37 @@ export default function Home() {
 
             {/* video section */}
             <div className="opacity-30 mt-5">
-              <video src="/assets/icon-images/Cyber City Video.mp4" autoPlay loop muted></video>
+              <video
+                src="/assets/icon-images/Cyber City Video.mp4"
+                autoPlay
+                loop
+                muted
+              ></video>
             </div>
 
             {/* footer */}
             <div className="flex items-center justify-center gap-5 -mt-40">
-              <img src="/assets/icon-images/$CLAW-1.png" className="w-40 lg:w-60 object-contain" alt="" />
+              <img
+                src="/assets/icon-images/$CLAW-1.png"
+                className="w-40 lg:w-60 object-contain"
+                alt=""
+              />
               <hr className="w-px h-10 bg-white -ml-10" />
-              <img src="/assets/icon-images/solana-sol-logo.png" className="w-14 lg:w-20 object-contain" alt="" />
+              <img
+                src="/assets/icon-images/solana-sol-logo.png"
+                className="w-14 lg:w-20 object-contain"
+                alt=""
+              />
             </div>
           </div>
-          <footer className="w-full bg-[#050440] grid place-items-center py-5 text-white z-[100] text-center">
+          <footer className="w-full bg-[#050440] grid place-items-center py-5 text-white  text-center">
             <div className="space-y-2">
               <img src="/assets/icon-images/footer-logo.png" alt="" />
 
-              <h2>
-                All rights reserved
-              </h2>
+              <h2>All rights reserved</h2>
             </div>
           </footer>
         </div>
-
       </main>
     </div>
   );
