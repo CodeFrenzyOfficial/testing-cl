@@ -39,7 +39,7 @@ export default function Home() {
             </h2>
 
             <div className="grid place-items-center mt-4">
-              <button className="w-fit bg-gradient-to-r from-[#56D1F5] to-[#6E2972] text-white font-semibold rounded-full p-[3px] cursor-pointer">
+              <button className="w-fit bg-gradient-to-r from-[#56D1F5] to-[#6E2972] text-white font-semibold rounded-full p-[5px] cursor-pointer">
                 <span className="flex w-full bg-gray-900 text-white rounded-full px-5 py-3 lg:px-14 lg:py-5 lg:text-[24px] font-normal">
                   CHAT WITH CLAW
                 </span>
@@ -49,20 +49,18 @@ export default function Home() {
             <HomeInput />
 
             {/* Buy now button */}
-            <div className="grid place-items-center my-4">
-              <button className="w-fit bg-gradient-to-r from-[#56D1F5] to-[#6E2972] text-white font-semibold rounded-full p-[3px] cursor-pointer">
-                <span className="flex w-full bg-gray-900 text-white rounded-full px-5 py-3 lg:px-14 lg:py-5 lg:text-[24px] font-normal">
-                  Buy Now
-                </span>
+            <div className="grid place-items-center mt-5">
+              <button className="w-fit bg-gray-900 text-white rounded-full px-10 py-5 font-normal text-xl cursor-pointer">
+                Buy Now
               </button>
             </div>
           </div>
 
           {/* cat video */}
-          <div className="w-full h-full relative grid place-items-center custom-gradient z-[100]">
-            <div className="w-2/3 lg:w-[40%]">
+          <div className="w-full h-full relative grid place-items-center custom-gradient z-[100] -mt-[5%] lg:-mt-[10%]">
+            <div className="w-2/3 lg:w-[40%] rounded-full overflow-hidden">
               <video
-                src="/assets/icon-images/claw-animation.webm"
+                src="/assets/icon-images/claw-animation.mp4"
                 className="lighten-mode"
                 autoPlay
                 loop
@@ -105,9 +103,10 @@ export default function Home() {
             </div>
 
             {/* video section */}
-            <div className="w-full relative mt-5 min-h-screen py-10">
+            <div className="w-full relative mt-5 min-h-screen py-10 flex flex-col justify-between">
               {/* example Iframe */}
               <CustomIframe />
+              {/* footer */}
 
               <video
                 src="/assets/icon-images/Cyber City Video.mp4"
@@ -116,24 +115,27 @@ export default function Home() {
                 loop
                 muted
               ></video>
-            </div>
 
-            {/* footer */}
-            <div className="flex items-center justify-center gap-5 -mt-40">
-              <img
-                src="/assets/icon-images/$CLAW-1.png"
-                className="w-40 lg:w-60 object-contain"
-                alt=""
-              />
-              <hr className="w-px h-10 bg-white -ml-10" />
-              <img
-                src="/assets/icon-images/solana-sol-logo.png"
-                className="w-14 lg:w-20 object-contain"
-                alt=""
-              />
+              <div className="flex items-center justify-center gap-5 z-[100]">
+                <a href="#hero-section" className="cursor-pointer">
+                  <img
+                    src="/assets/icon-images/$CLAW-1.png"
+                    className="w-40 lg:w-60 object-contain"
+                    alt=""
+                  />
+                </a>
+                <hr className="w-px h-10 bg-white -ml-10" />
+                <a href="#" target="_blank">
+                  <img
+                    src="/assets/icon-images/solana-sol-logo.png"
+                    className="w-14 lg:w-20 object-contain"
+                    alt=""
+                  />
+                </a>
+              </div>
             </div>
           </div>
-          
+
           <footer className="w-full bg-[#050440] grid place-items-center py-5 text-white  text-center">
             <div className="space-y-2">
               <img src="/assets/icon-images/footer-logo.png" alt="" />
