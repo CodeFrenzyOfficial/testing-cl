@@ -60,7 +60,7 @@ export default function Home() {
           <div className="w-full h-full relative grid place-items-center custom-gradient z-[100] -mt-[5%] lg:-mt-[10%]">
             <div className="w-2/3 lg:w-[40%] rounded-full overflow-hidden">
               <video
-                src="/assets/icon-images/claw-animation.mp4"
+                src="/assets/animation/cat-animation.mp4"
                 className="lighten-mode"
                 autoPlay
                 loop
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
 
             {/* text */}
-            <div className="grid place-items-center px-20 lg:px-24 my-10">
+            <div className="grid place-items-center px-20 lg:px-24 my-10 overflow-hidden">
               <div
                 className="rounded-4xl bg-[#171D27] px-4 lg:px-14 py-4"
                 data-aos="fade-up"
@@ -95,7 +95,7 @@ export default function Home() {
                 <div className="flex justify-end">
                   <img
                     src="/assets/icon-images/second-qoute.png"
-                    className="w-3 lg:w-auto mr-14"
+                    className="w-3 lg:w-auto lg:mr-14"
                     alt=""
                   />
                 </div>

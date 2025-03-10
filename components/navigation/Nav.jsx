@@ -23,7 +23,7 @@ export default function Nav() {
 
                 {/* Logo Image and text */}
                 <div className="flex items-center">
-                    <img src="/assets/icon-images/logo.png" className="w-[80%] object-contain" alt="Logo" />
+                    <img src="/assets/icon-images/logo.png" className="w-[40%] object-contain" alt="Logo" />
                     <img src="/assets/icon-images/$CLAW.png" className="w-32 lg:-ml-2 object-contain" alt="CLAW" />
                 </div>
 
