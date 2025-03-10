@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 export default function Loader() {
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
 
     // Function to handle content load
     useEffect(() => {
