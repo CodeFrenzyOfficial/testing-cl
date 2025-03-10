@@ -5,7 +5,6 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import CustomIframe from "@/components/iframe/CustomIframe";
 import Loader from "@/components/loader/Loader";
-
 export default function Home() {
   return (
     <div className="">
@@ -28,7 +27,7 @@ export default function Home() {
           <div className="w-[80%] lg:w-[60%] flex flex-col text-center gap-2">
             <div className="grid place-items-center">
               <img
-                src={'/assets/animation/cat-animation.mp4'}
+                src="/assets/icon-images/$CLAW-1.png"
                 className="lg:w-[35%] object-contain"
                 alt=""
               />
@@ -58,15 +57,13 @@ export default function Home() {
           </div>
 
           {/* cat video */}
-          <div className="w-full h-full relative grid place-items-center custom-gradient z-[100] -mt-[5%] lg:-mt-[10%]">
+          <div className="w-full h-full relative grid place-items-center custom-gradient z-[100]">
             <div className="w-2/3 lg:w-[40%] rounded-full overflow-hidden">
-              <video
-                src="/assets/animation/cat-animation.mp4"
-                className="lighten-mode"
-                autoPlay
-                loop
-                muted
-              ></video>
+              <video                
+              >
+                <source src="/assets/animation/cat-animation.mp4" autoPlay
+                  loop />
+              </video>
             </div>
 
             {/* social icons */}
@@ -136,8 +133,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          <video src="/assets/animation/cat-animation.mp4" className="w-96 h-96 aspect-video"></video>
 
           <footer className="w-full bg-[#050440] grid place-items-center py-5 text-white  text-center">
             <div className="space-y-2">
