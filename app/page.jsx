@@ -68,6 +68,7 @@ export default function Home() {
               autoPlay
               loop
               muted
+              className="w-96 h-96 aspect-video object-contain"
               src="/assets/animation/cat-animation.mp4"
             >
             </video>
