@@ -29,25 +29,31 @@ export default function Nav() {
 
                 {/* Input field with Copy button */}
                 <div className="w-[70%] lg:w-[75%] bg-[#2C2C2C] rounded-full relative flex items-center justify-between p-1">
-                    <div className="rounded-full p-2 text-white bg-black">CA:</div>
+                    <div className="rounded-full p-2 text-white bg-black">
+                        <h2 className="w-fit">
+                            CA:
+                        </h2>
+                    </div>
                     <div
                         className="w-1/2 lg:w-[95%] text-white bg-transparent outline-none border-none ml-2 overflow-x-hidden"
                     >
                         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                     </div>
                     <button
-                        className="rounded-full px-5 py-2 text-white bg-black hover:bg-gray-800 transition-all"
+                        className="rounded-full px-5 py-2 text-white bg-black hover:bg-gray-800 transition-all grid place-items-center text-center"
                         onClick={handleCopy}
                     >
-                        {copied ? "Copied!" : "Copy"}
+                        <h2 className="cursor-pointer">
+                            {copied ? "Copied!" : "Copy"}
+                        </h2>
                     </button>
                 </div>
             </div>
 
             {/* Links and Buttons */}
             <div className="w-full lg:w-auto flex justify-between items-center gap-7">
-                <button className="bg-gradient-to-r from-[#56D1F5] to-[#6E2972] text-white font-semibold rounded-full p-[3px]">
-                    <span className="flex w-full bg-gray-900 text-white text-xs font-normal rounded-full px-6 py-2">
+                <button className="cursor-pointer bg-gradient-to-r from-[#56D1F5] to-[#6E2972] text-white font-semibold rounded-full p-[3px] group">
+                    <span className="flex w-full bg-gray-900 text-white text-xs font-normal rounded-full px-6 py-2 transition-all duration-200 group-hover:bg-black/90">
                         CHAT WITH CLAW
                     </span>
                 </button>

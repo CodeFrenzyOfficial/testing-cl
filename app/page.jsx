@@ -11,6 +11,8 @@ export default function Home() {
       <Loader />
       <Nav />
       <main className="relative min-h-screen">
+        <img src="/assets/icon-images/bg-pattern.png" className="absolute top-0 left-0 w-full h-full object-cover z-20 pointer-events-none" alt="" />
+
         {/* background video */}
         <video
           src="/assets/icon-images/Neon Bg Video.mp4"
@@ -35,12 +37,12 @@ export default function Home() {
 
             <h2 className="text-4xl xl:text-[64px] text-white -mt-5 lg:-mt-10 font-bold !leading-tight">
               The World’s first AI-powered <br />
-              <span className="text-[#BA8AB0]">savage meme coin cat!</span>
+              <span className="bg-gradient-to-b from-white to-[#BA8AB0] bg-clip-text text-transparent text-">savage meme coin cat!</span>
             </h2>
 
             <div className="grid place-items-center mt-4">
-              <button className="w-fit bg-gradient-to-r from-[#56D1F5] to-[#6E2972] text-white font-semibold rounded-full p-[5px] cursor-pointer">
-                <span className="flex w-full bg-gray-900 text-white rounded-full px-5 py-3 lg:px-14 lg:py-5 lg:text-[24px] font-normal">
+              <button className="w-fit bg-gradient-to-r from-[#56D1F5] to-[#6E2972] text-white font-semibold rounded-full p-[5px] cursor-pointer transition-all duration-200 group">
+                <span className="group-hover:bg-black/90 transition-all duration-200 flex w-full bg-gray-900 text-white rounded-full px-5 py-3 lg:px-14 lg:py-5 lg:text-[24px] font-normal">
                   CHAT WITH CLAW
                 </span>
               </button>
@@ -59,11 +61,13 @@ export default function Home() {
           {/* cat video */}
           <div className="w-full h-full relative grid place-items-center custom-gradient z-[100]">
             <div className="w-2/3 lg:w-[40%] rounded-full overflow-hidden">
-              <video                
+              <video
+                autoPlay
+                loop
+                muted
               >
-                <source src="/assets/animation/cat-animation.mp4" autoPlay
-                  loop
-                  muted />
+                <source src="/assets/animation/cat-animation.mp4"
+                />
               </video>
             </div>
 
@@ -135,15 +139,18 @@ export default function Home() {
             </div>
           </div>
 
-          <footer className="w-full bg-[#050440] grid place-items-center py-5 text-white  text-center">
-            <div className="space-y-2">
-              <img src="/assets/icon-images/footer-logo.png" alt="" />
 
-              <h2>All rights reserved</h2>
-            </div>
-          </footer>
         </div>
+
+        {/* pattern */}
       </main>
+      <footer className="w-full bg-[#050440] grid place-items-center py-5 text-white  text-center">
+        <div className="space-y-2">
+          <img src="/assets/icon-images/footer-logo.png" alt="" />
+
+          <h2>All rights reserved</h2>
+        </div>
+      </footer>
     </div>
   );
 }

@@ -131,7 +131,7 @@ body {
 }
 
 .custom-gradient {
-  background-image: url("../public/assets/icon-images/bg-pattern.png"), linear-gradient(to bottom, transparent, #131232,#131232,#131232,#131232,#131232,#131232);
+  background-image: linear-gradient(to bottom, transparent, #131232,#131232,#131232,#131232,#131232,#131232);
   background-size: cover;
   background-position: bottom;
   height: 100%;

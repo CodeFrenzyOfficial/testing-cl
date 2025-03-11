@@ -15,7 +15,7 @@ export default function HomeInput() {
 
     return (
         <div
-            className="w-full flex flex-col items-center justify-center bg-[#171D27] rounded-md shadow-xl shadow-black/50 text-white py-4 lg:py-2 px-5 text-2xl lg:text-[32px] mt-5 cursor-pointer"
+            className="w-full flex flex-col items-center justify-center bg-[#171D27] rounded-md shadow-xl shadow-black/50 text-white py-4 lg:py-2 px-5 text-2xl lg:text-[32px] mt-5 cursor-pointer transition-all duration-200 hover:bg-black/80"
             onClick={handleCopy}
         >
             <h2 className="text-center w-full">Contract Address:</h2>
