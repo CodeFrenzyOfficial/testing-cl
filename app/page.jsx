@@ -37,7 +37,9 @@ export default function Home() {
 
             <h2 className="text-4xl xl:text-[64px] text-white -mt-5 lg:-mt-10 font-bold !leading-tight">
               The World’s first AI-powered <br />
-              <span className="bg-gradient-to-b from-white to-[#BA8AB0] bg-clip-text text-transparent text-">savage meme coin cat!</span>
+              <span className="bg-gradient-to-b from-white to-[#BA8AB0] bg-clip-text text-transparent text-">
+                savage meme coin cat!
+              </span>
             </h2>
 
             <div className="grid place-items-center mt-4">
@@ -60,14 +62,14 @@ export default function Home() {
 
           {/* cat video */}
           <div className="w-full h-full relative grid place-items-center custom-gradient z-[100]">
-            <div className="w-2/3 lg:w-[40%] rounded-full overflow-hidden">
+            <video src="/assets/animation/cat-animation.mp4" className=""></video>
+            <div className="hidden lg:block w-2/3 lg:w-[40%] rounded-full overflow-hidden">
               <video
                 autoPlay
                 loop
                 muted
+                src="/assets/animation/cat-animation.mp4"
               >
-                <source src="/assets/animation/cat-animation.mp4"
-                />
               </video>
             </div>
 
