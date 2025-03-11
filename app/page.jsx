@@ -67,17 +67,15 @@ export default function Home() {
             {/* cat animation video section */}
             <div className="hidden lg:flex justify-center items-center mx-auto ">
               <div className="rounded-full overflow-hidden">
-
                 <video
                   autoPlay
                   loop
                   muted
                   controls={false}
                   playsInline
-                  className="w-96 h-96 aspect-video object-contain"
+                  className="w-[30rem] h-[30rem] aspect-video object-contain"
                   src="/assets/animation/cat-animation.mp4"
                 >
-
                 </video>
               </div>
 
