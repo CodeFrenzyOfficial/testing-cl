@@ -11,8 +11,6 @@ export default function Home() {
       <Loader />
       <Nav />
       <main className="relative min-h-screen">
-
-
         {/* background video */}
         <video
           src="/assets/icon-images/Neon Bg Video.mp4"
@@ -39,9 +37,9 @@ export default function Home() {
             </div>
 
             <h2 className="text-4xl xl:text-[64px] text-white -mt-5 lg:-mt-10 font-bold !leading-tight">
-              The World’s first AI-powered <br />
+              The world's first uncensored <br />
               <span className="bg-gradient-to-b from-white to-[#BA8AB0] bg-clip-text text-transparent text-">
-                savage meme coin cat!
+                jailbroken AI chat bot cat
               </span>
             </h2>
 
@@ -83,11 +81,17 @@ export default function Home() {
 
             {/* social icons section */}
             <div className="w-full flex justify-center items-center gap-14 text-white my-10">
-              <FaXTwitter className="text-3xl lg:text-6xl transition-all duration-200 hover:scale-105 hover:text-white/50" />
-              <div className="p-2 rounded-full bg-white text-black">
+              <a href="https://x.com/ClawCoin_Sol" target="_blank" className="overflow-hidden">
+                <FaXTwitter className="text-3xl lg:text-6xl transition-all duration-200 hover:scale-105 hover:text-white/50" />
+              </a>
+
+              <a href="https://t.me/ClawCoin_Sol" target="_blank" className="p-2 rounded-full bg-white text-black">
                 <RiSendPlaneFill className="text-2xl lg:text-5xl transition-all duration-200 hover:scale-105 hover:text-blue-400" />
-              </div>
-              <FaGithub className="text-3xl lg:text-6xl transition-all duration-200 hover:scale-105 hover:text-white/50" />
+              </a>
+              <a href="https://github.com/mhathegreat/Clawcoin-bot" className="overflow-hidden" target="_blank">
+                <FaGithub className="text-3xl lg:text-6xl transition-all duration-200 hover:scale-105 hover:text-white/50" />
+              </a>
+
             </div>
 
             {/* gradient text section */}

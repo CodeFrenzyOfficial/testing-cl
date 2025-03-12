@@ -52,18 +52,24 @@ export default function Nav() {
 
             {/* Links and Buttons */}
             <div className="w-full lg:w-auto flex justify-between items-center gap-7">
-                <button className="cursor-pointer bg-gradient-to-r from-[#56D1F5] to-[#6E2972] text-white font-semibold rounded-full p-[3px] group">
+                <a target="_blank" href="https://chat.clawcoinsol.xyz/" className="cursor-pointer bg-gradient-to-r from-[#56D1F5] to-[#6E2972] text-white font-semibold rounded-full p-[3px] group">
                     <span className="flex w-full bg-gray-900 text-white text-xs font-normal rounded-full px-6 py-2 transition-all duration-200 group-hover:bg-black/90">
                         CHAT WITH CLAW
                     </span>
-                </button>
+                </a>
 
                 <div className="flex items-center gap-5 text-white">
-                    <FaXTwitter className="text-3xl transition-all duration-200 hover:scale-105 hover:text-white/50" />
-                    <div className="p-1 rounded-full bg-white text-black">
+                    <a href="https://x.com/ClawCoin_Sol" target="_blank">
+                        <FaXTwitter className="text-3xl transition-all duration-200 hover:scale-105 hover:text-white/50" />
+                    </a>
+
+                    <a href="https://t.me/ClawCoin_Sol" target="_blank" className="p-1 rounded-full bg-white text-black">
                         <RiSendPlaneFill className="text-2xl transition-all duration-200 hover:scale-105 hover:text-blue-400" />
-                    </div>
-                    <FaGithub className="text-3xl transition-all duration-200 hover:scale-105 hover:text-white/50" />
+                    </a>
+                    <a href="https://github.com/mhathegreat/Clawcoin-bot" target="_blank">
+                        <FaGithub className="text-3xl transition-all duration-200 hover:scale-105 hover:text-white/50" />
+                    </a>
+
                 </div>
             </div>
         </nav>

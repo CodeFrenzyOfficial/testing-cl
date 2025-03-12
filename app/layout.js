@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "CLAW",
+  title: "Explore Claw Coin on Solana",
 };
 
 export default function RootLayout({ children }) {
