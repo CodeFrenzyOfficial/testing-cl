@@ -44,11 +44,11 @@ export default function Home() {
             </h2>
 
             <div className="grid place-items-center mt-4">
-              <button className="w-fit bg-gradient-to-r from-[#56D1F5] to-[#6E2972] text-white font-semibold rounded-full p-[5px] cursor-pointer transition-all duration-200 group">
+              <a href="https://chat.clawcoinsol.xyz/" target="_blank" className="w-fit bg-gradient-to-r from-[#56D1F5] to-[#6E2972] text-white font-semibold rounded-full p-[5px] cursor-pointer transition-all duration-200 group">
                 <span className="group-hover:bg-black/90 transition-all duration-200 flex w-full bg-gray-900 text-white rounded-full px-5 py-3 lg:px-14 lg:py-5 lg:text-[24px] font-normal">
                   CHAT WITH CLAW
                 </span>
-              </button>
+              </a>
             </div>
 
             <HomeInput />
